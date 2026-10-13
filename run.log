@@ -1,0 +1,25 @@
+== S3 bucket ==
+{
+    "BucketArn": "arn:aws:s3:::itmo-444-544-hvtran21-fileshare",
+    "BucketRegion": "us-east-2",
+    "AccessPointAlias": false
+}
+Bucket already exists, skipping.
+== Uploader role (PutObject on shared.txt only) ==
+Role exists, skipping.
+Profile exists, skipping.
+== Viewer role (GetObject + ListBucket on shared.txt only) ==
+Role exists, skipping.
+Profile exists, skipping.
+Waiting 15s for IAM propagation...
+== Building user-data from local lab03/ files ==
+== Building launch template data ==
+== Creating/updating launch templates ==
+Template itmo-444-544-uploader-lt exists — publishing a new version
+Template itmo-444-544-viewer-lt exists — publishing a new version
+== Looking up the default VPC and subnets in both AZs ==
+== ALB security group ==
+ALB security group already exists, skipping.
+== Tightening the app security group to only accept traffic from the ALB ==
+== Target groups ==
+Target group itmo-444-544-uploader-tg already exists, skipping.

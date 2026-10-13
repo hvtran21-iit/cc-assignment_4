@@ -1,0 +1,41 @@
+== Deleting Auto Scaling Groups (this also terminates their instances) ==
+Waiting for both Auto Scaling Groups to be gone...
+itmo-444-544-uploader-asg deleted.
+itmo-444-544-viewer-asg deleted.
+== Deleting the load balancer ==
+== Deleting target groups ==
+== Restoring the app security group to its previous-lab state ==
+== Deleting the ALB security group ==
+== Looking for stray standalone instances ==
+No stray instances found.
+== Deleting launch templates ==
+{
+    "LaunchTemplate": {
+        "LaunchTemplateId": "lt-017f3f296c3cdfe0b",
+        "LaunchTemplateName": "itmo-444-544-uploader-lt",
+        "CreateTime": "2026-10-13T20:00:19+00:00",
+        "CreatedBy": "arn:aws:iam::417873488887:user/henry-tran-lab-user",
+        "DefaultVersionNumber": 1,
+        "LatestVersionNumber": 4,
+        "Operator": {
+            "Managed": false
+        }
+    }
+}
+{
+    "LaunchTemplate": {
+        "LaunchTemplateId": "lt-02f592167196101a9",
+        "LaunchTemplateName": "itmo-444-544-viewer-lt",
+        "CreateTime": "2026-10-13T20:00:22+00:00",
+        "CreatedBy": "arn:aws:iam::417873488887:user/henry-tran-lab-user",
+        "DefaultVersionNumber": 1,
+        "LatestVersionNumber": 4,
+        "Operator": {
+            "Managed": false
+        }
+    }
+}
+== Removing IAM instance profiles and roles ==
+== Emptying and deleting S3 bucket ==
+delete: s3://itmo-444-544-hvtran21-fileshare/shared.txt
+Cleanup complete.
